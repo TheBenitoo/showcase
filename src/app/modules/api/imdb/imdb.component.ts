@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-imdb',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImdbComponent implements OnInit {
 
-  constructor() { }
+  movies :any;
+
+  constructor(private moviesService: MoviesService) { }
 
   ngOnInit(): void {
+    this.moviesService.getMovieApi("Avengers Endgame").subscribe(
+      (data: any) => {
+        this.movies = data.Search;
+      }
+    );
   }
-
 }

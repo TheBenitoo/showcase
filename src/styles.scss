@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 html, body { height: 100%; }
-body { 
+body {
     .cur-pointer:hover {cursor: pointer;}
-    margin: 0; 
+    margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background: linear-gradient(90deg, rgb(255, 255, 255) 46%, rgb(163, 155, 250) 100%);
     .primary { color: #33066e !important; }
@@ -17,7 +17,7 @@ body {
 }
 
 body.dark{
-    margin: 0; 
+    margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background: linear-gradient(90deg, rgba(2,0,36,1) 46%, rgba(19,15,64,1) 100%);
     .primary { color: #8846de !important; }
@@ -25,5 +25,5 @@ body.dark{
     .light { color: rgb(0, 0, 0) !important; }
     .dark { color: rgb(255, 255, 255) !important; }
     .btn-back-dark { background-color: rgb(255, 255, 255) !important; }
-    .text-col {color: white !important; } 
+    .text-col {color: white !important; }
 }
